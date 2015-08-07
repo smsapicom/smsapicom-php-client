@@ -29,7 +29,7 @@ abstract class ActionFactory {
 		if ( $proxy instanceof \SMSApi\Proxy\Proxy ) {
 			$this->setProxy( $proxy );
 		} else {
-			$this->setProxy(new Native('https://api.smsapi.pl'));
+			$this->setProxy(new Native('https://api.smsapi.com'));
 		}
 
 		if ( $client instanceof \SMSApi\Client ) {

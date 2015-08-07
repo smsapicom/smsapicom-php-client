@@ -157,7 +157,7 @@ class ContactResponse extends AbstractResponse {
 	/**
 	 * Returns contact e-mail address
 	 *
-	 * @return string Example: example@smsapi.pl
+	 * @return string Example: example@smsapi.com
 	 */
 	public function getEmail() {
 		return $this->email;

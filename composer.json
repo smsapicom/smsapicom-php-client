@@ -1,7 +1,7 @@
 {
     "name": "smsapi.pl/php-client",
     "description": "Library for communicating with provider",
-    "homepage": "http://smsapi.pl",
+    "homepage": "http://smsapi.com",
     "version": "1.6.1",
     "type": "library",
     "license": "Apache-2.0",

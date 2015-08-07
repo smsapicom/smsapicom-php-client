@@ -1,6 +1,6 @@
-﻿# SMSAPI PHP Client
+﻿# SMSAPI.com (International) PHP Client
 
-Klient PHP pozwalający na wysyłanie wiadomości SMS, MMS, VMS oraz zarządzanie kontem w serwisie SMSAPI.pl
+PHP client which allows you to send SMS messages and manage your account in **SMSAPI.com**
 
 ```php
 <?php
@@ -12,7 +12,7 @@ use SMSApi\Exception\SmsapiException;
 require_once 'vendor/autoload.php';
 
 $client = new Client('login');
-$client->setPasswordHash( md5('super tajne haslo') );
+$client->setPasswordHash( 'your api password in md5' );
 
 $smsapi = new SmsFactory;
 $smsapi->setClient($client);
@@ -20,9 +20,9 @@ $smsapi->setClient($client);
 try {
 	$actionSend = $smsapi->actionSend();
 
-	$actionSend->setTo('600xxxxxx');
+	$actionSend->setTo('44xxxxxxxxxxxx');
 	$actionSend->setText('Hello World!!');
-	$actionSend->setSender('Info'); //Pole nadawcy, lub typ wiadomości: 'ECO', '2Way'
+	$actionSend->setSender('Info');
 
 	$response = $actionSend->execute();
 
@@ -34,18 +34,14 @@ try {
 }
 ```
 
-[Dokumentacja API biblioteki.](https://github.com/smsapi/smsapi-php-client/wiki)
-
-Sprawdź na przykładach, w jaki sposób można korzystać z biblioteki ([examples](https://github.com/smsapi/smsapi-php-client/wiki/Examples)).
-
-## Wymagania
+## Requirements
 
 * PHP >= 5.3
-* allow_url_fopen lub rozszerzenie curl
+* allow_url_fopen or curl extension
 
-## Instalacja
+## Instalation
 
-W swoim projekcie dodaj do `composer.json` pakiet :
+Add to `composer.json` in your project package:
 
 ```json
 {
@@ -55,5 +51,5 @@ W swoim projekcie dodaj do `composer.json` pakiet :
 }
 ```
 
-## Licencja
+## License
 [Apache 2.0 License](LICENSE)
