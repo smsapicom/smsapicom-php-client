@@ -1,14 +1,12 @@
 <?php
 
 return  array(
-    'smsapiapimmsfactory' => 'SMSApi\Api\MmsFactory',
     'smsapiapiactionfactory' => 'SMSApi\Api\ActionFactory',
     'smsapiclient' => 'SMSApi\Client',
     'smsapiproxyhttpnative' => 'SMSApi\Proxy\Http\Native',
     'smsapiproxyhttpcurl' => 'SMSApi\Proxy\Http\Curl',
     'smsapiproxyhttpabstracthttp' => 'SMSApi\Proxy\Http\AbstractHttp',
     'smsapiproxyproxy' => 'SMSApi\Proxy\Proxy',
-    'smsapiapiactionmmssend' => 'SMSApi\Api\Action\Mms\Send',
     'smsapiapiactionabstractaction' => 'SMSApi\Api\Action\AbstractAction',
     'smsapiproxyuri' => 'SMSApi\Proxy\Uri',
     'smsapiapiresponseerrorresponse' => 'SMSApi\Api\Response\ErrorResponse',
@@ -17,8 +15,6 @@ return  array(
     'smsapiapiresponsestatusresponse' => 'SMSApi\Api\Response\StatusResponse',
     'smsapiapiresponsecountableresponse' => 'SMSApi\Api\Response\CountableResponse',
     'smsapiapiresponsemessageresponse' => 'SMSApi\Api\Response\MessageResponse',
-    'smsapiapiactionmmsget' => 'SMSApi\Api\Action\Mms\Get',
-    'smsapiapiactionmmsdelete' => 'SMSApi\Api\Action\Mms\Delete',
     'smsapiapiphonebookfactory' => 'SMSApi\Api\PhonebookFactory',
     'smsapiapiactionphonebookgroupadd' => 'SMSApi\Api\Action\Phonebook\GroupAdd',
     'smsapiapiresponsegroupresponse' => 'SMSApi\Api\Response\GroupResponse',
@@ -54,13 +50,9 @@ return  array(
     'smsapiapiactionusergetpoints' => 'SMSApi\Api\Action\User\GetPoints',
     'smsapiapiactionuseruserlist' => 'SMSApi\Api\Action\User\UserList',
     'smsapiapiresponseusersresponse' => 'SMSApi\Api\Response\UsersResponse',
-    'smsapiapivmsfactory' => 'SMSApi\Api\VmsFactory',
-    'smsapiapiactionvmssend' => 'SMSApi\Api\Action\Vms\Send',
     'smsapiexceptionsmsapiexception' => 'SMSApi\Exception\SmsapiException',
     'smsapiexceptionhostexception' => 'SMSApi\Exception\HostException',
     'smsapiexceptionactionexception' => 'SMSApi\Exception\ActionException',
     'smsapiexceptionclientexception' => 'SMSApi\Exception\ClientException',
     'smsapiexceptionproxyexception' => 'SMSApi\Exception\ProxyException',
-    'smsapiapiactionvmsget' => 'SMSApi\Api\Action\Vms\Get',
-    'smsapiapiactionvmsdelete' => 'SMSApi\Api\Action\Vms\Delete',
 );

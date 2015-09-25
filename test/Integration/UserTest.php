@@ -173,8 +173,5 @@ class UserTest extends SmsapiTestCase
         $this->assertGreaterThanOrEqual(0, $result->getPoints());
         $this->assertGreaterThanOrEqual(0, $result->getProCount());
         $this->assertGreaterThanOrEqual(0, $result->getEcoCount());
-        $this->assertGreaterThanOrEqual(0, $result->getMmsCount());
-        $this->assertGreaterThanOrEqual(0, $result->getVmsGsmCount());
-        $this->assertGreaterThanOrEqual(0, $result->getVmsLandCount());
     }
 }

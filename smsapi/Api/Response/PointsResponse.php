@@ -16,15 +16,6 @@ class PointsResponse extends AbstractResponse
     /** @var int|null */
     private $ecoCount;
 
-    /** @var int|null */
-    private $mmsCount;
-
-    /** @var int|null */
-    private $vmsGsmCount;
-
-    /** @var int|null */
-    private $vmsLandCount;
-
     public function __construct($data)
     {
         parent::__construct($data);
@@ -37,17 +28,6 @@ class PointsResponse extends AbstractResponse
             $this->ecoCount = $this->obj->ecoCount;
         }
 
-        if (isset($this->obj->mmsCount)) {
-            $this->mmsCount = $this->obj->mmsCount;
-        }
-
-        if (isset($this->obj->vmsGsmCount)) {
-            $this->vmsGsmCount = $this->obj->vmsGsmCount;
-        }
-
-        if (isset($this->obj->vmsLandCount)) {
-            $this->vmsLandCount = $this->obj->vmsLandCount;
-        }
     }
 
     /**
@@ -70,18 +50,4 @@ class PointsResponse extends AbstractResponse
         return $this->ecoCount;
     }
 
-    public function getMmsCount()
-    {
-        return $this->mmsCount;
-    }
-
-    public function getVmsGsmCount()
-    {
-        return $this->vmsGsmCount;
-    }
-
-    public function getVmsLandCount()
-    {
-        return $this->vmsLandCount;
-    }
 }
