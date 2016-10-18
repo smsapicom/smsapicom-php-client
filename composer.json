@@ -2,7 +2,6 @@
     "name": "smsapi.com/php-client",
     "description": "Library for communicating with provider",
     "homepage": "http://smsapi.com",
-    "version": "1.7.0",
     "type": "library",
     "license": "Apache-2.0",
     "keywords": ["sms"],
