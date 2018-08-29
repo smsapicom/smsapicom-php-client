@@ -22,7 +22,7 @@ try {
 
 	$actionSend->setTo('44xxxxxxxxxxxx');
 	$actionSend->setText('Hello World!!');
-	$actionSend->setSender('Info');
+	$actionSend->setSender('Test');
 
 	$response = $actionSend->execute();
 
